@@ -1,7 +1,5 @@
 # ABMWeb_garcia_arcija
 
-
-
 Descripcion:
 Esta aplicacion solo puede ser utilizada con autenticacion y autorizacion del usuario. 
 Una vez logueado el usuario, se determina a que recursos puede acceder.
@@ -15,7 +13,7 @@ Ejecutar las consultas SQL contenidas en el archivo script_garcia.sql
 Luego se debe configurar la conexion al esquema usuarios dentro de <GlobalNamingResources> en el archivo server.xml de apache-tomcat/conf 
 ```xml
 <GlobalNamingResources>
-    	<Resource name="jdbc/usuarios" auth="Container"
+    	<Resource name="jdbc/fichadas" auth="Container"
           	type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
           	url= "jdbc:postgresql://localhost:5432/web"  	 
           	username= "postgres" password= "123"
